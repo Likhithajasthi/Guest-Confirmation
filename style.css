@@ -54,10 +54,12 @@ button {
 }
 .btn-submit {
     color: white;
-    padding: 0 1em;
+    padding: 5px 10px;
     font-size: 1em;
     background-color: #7bcbc4;
     border-radius: 0.2em;
+    margin:1px;
+    border: 1px solid grey;
 }
 
 /* Layout */
