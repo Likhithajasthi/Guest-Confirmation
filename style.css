@@ -15,7 +15,7 @@ h1 {
     text-shadow: 0 1px 0 rgba(0,0,0, .4);
     line-height: 0.65;
     margin-top: 0.5em;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 h2 {
     margin-top: 0;
@@ -24,11 +24,11 @@ h2 {
 p {
     font-size: 1.1em;
     text-shadow: 0 1px 0 rgba(0,0,0, .25);
+    margin-bottom: 40px;
 }
 #invited-list {
     clear: both;
-    display: inline-block;
-}
+    /*display: inline-block;*/}
 
 /* Form Elements */
 
@@ -57,12 +57,11 @@ button {
 }
 .btn-submit {
     color: white;
-    padding: 5px 10px;
+    padding: 0 1em;
     font-size: 1em;
     background-color: #7bcbc4;
     border-radius: 0.2em;
-    margin:1px;
-    border: 1px solid grey;
+
 }
 
 /* Layout */
@@ -129,6 +128,10 @@ header {
 .guest button:last-child {
     background-color: rgba(88, 183, 205, 0.5);
 }
+.hide-guests{
+    float: right;
+    
+}
 
 /* =================================
   Media Queries
@@ -166,6 +169,7 @@ header {
         margin-bottom: 1em;
         float: none;
     }
+
 }
 
 @media (min-width: 769px) {
@@ -195,13 +199,16 @@ header {
         font-size: 1.9em;
         margin-left: 1.25%;
     }
-    .hide-guests {
+
+    .hide-guests{
         float: right;
         margin-top: 12px;
         margin-right: 1.25%;
     }
+
     .guest-list {
         display: flex;
+        clear: both;
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 1.25em;
